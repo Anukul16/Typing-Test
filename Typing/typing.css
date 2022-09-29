@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+}
+.header{
+    display: flex;
+    
+    margin: 50px 10px 50px 10px;
+    background: black;
+    color: whitesmoke;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    color:whitesmoke;
+    font-size: larger;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.common{
+    
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.container{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns:1fr repeat(3,100px) ;
+    grid-template-rows:150px 70px;
+    grid-gap: 20px;
+    
+   
+}
+.box{
+   
+}
+#text-container{
+    border: 2px solid whitesmoke;
+    background: black;
+    grid-column: 1/-1;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: xx-large;
+    line-height: 50px;
+    padding-left: 10px;
+    font-family: none;
+}
+#usertype-container{
+    background: lightblue;
+    border-radius: 2px;
+    font-size: xx-large;
+    padding: 7px;
+    
+}
+#wpmContainer{
+    background: lightseagreen;
+    border-radius: 1px;
+    border-radius: 1px;
+    font-size:x-large;
+    text-align: center;
+     padding-top: 17px;
+    
+}
+#timeContainer{
+    background: orange;
+    border-radius: 1px;
+    font-size: xx-large;
+    text-align: center;
+     padding-top: 10px;
+}
+#refresh-container{
+    background: white;
+    border-radius: 1px;
+    
+    
+}
+#refresh-container img{
+   display: block;
+   margin: 10px auto;
+}
+.common:hover{
+    cursor: pointer;
+    color: red;
+    font-style: italic;
+    font-size: larger;
+    
+
+}
+.box:hover{
+    cursor: pointer;
+    border: 2px solid blue;
+}
+#usertype-container:active{
+    border: 2px solid darkblue;
+}
+
+
+
+
+
+
+
+.settings-container{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 200px 50px 150px 50px repeat(3,30px);
+    grid-template-rows:repeat(4,1fr);
+    grid-gap: 60px;
+    border: 2px solid black;
+    color: red;
+    
+   
+}
+.same{
+    border: 1px solid red;
+    color: whitesmoke;
+    padding-top: 15px;
+    
+}
+#wpm{
+    background-color: whitesmoke;
+    font-size: larger;
+    color: black;
+    /* grid-area: 1/1/2/3; */
+}
+#accuracy{
+    /* background-color: aquamarine; */
+    grid-area: 2/1/3/3;
+    font-size: larger;
+    border: 1px solid #2A2A2A;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(41, 39, 39);
+}
+#show-accuracy{
+    /* background-color:bisque; */
+    grid-area: 2/3/3/3;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+}
+#duration{
+    /* background-color:blue; */
+    grid-area: 2/4/3/8;
+    font-size: larger;
+    border: 1px solid #2A2A2A;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(41, 39, 39);
+}
+#ten-sec{
+    /* background-color:blueviolet; */
+    grid-area: 2/8/3/9;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 50%;
+    /* background: red; */
+}
+
+#ten-sec:hover{
+    cursor: pointer;
+    font-style: italic;
+    
+    
+}
+
+#thirty-sec{
+    /* background-color:brown; */
+    grid-area: 2/9/3/9;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    border-radius: 50%;
+}
+#thirty-sec:hover{
+    cursor: pointer;
+    font-style: italic;
+    
+    
+}
+
+#one-min{
+    /* background-color:burlywood; */
+    grid-area: 2/10/3/10;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    border-radius: 50%;
+}
+#one-min:hover{
+    cursor: pointer;
+    font-style: italic;
+    
+    
+}
+
+#correct-words{
+    /* background-color:yellowgreen; */
+    grid-area: 3/1/4/3;
+    font-size: larger;
+    border: 1px solid #2A2A2A;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(41, 39, 39);
+}
+#count-correct{
+    /* background-color:yellow; */
+    grid-area: 3/3/4/3;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+}
+#show-wpm{
+    /* background-color:violet; */
+    grid-area: 3/4/4/8;
+    font-size: larger;
+    border: 1px solid #2A2A2A;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(41, 39, 39);
+    
+}
+#showOPT{
+    /* background-color:turquoise; */
+    grid-area: 3/8/3/8;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    background: red;
+    border-radius: 50%;
+}
+#showOPT:hover{
+    cursor: pointer;
+    font-style: italic;
+    
+    
+}
+
+
+#hideOPT{
+    /* background-color: tomato; */
+    grid-area: 3/9/4/9;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+    border-radius: 50%;
+}
+#hideOPT:hover{
+    cursor: pointer;
+    
+    font-style: italic;
+}
+#incorrect-words{
+    /* background-color:teal; */
+    grid-area: 4/1/5/3;
+    font-size: larger;
+    border: 1px solid #2A2A2A;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(41, 39, 39);
+}
+#count-incorrect{
+    /* background-color:tan; */
+    grid-area: 4/3/5/3;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 10px;
+}
+#show-timer{
+    /* background-color:springgreen; */
+    grid-area: 4/4/5/8;
+    font-size: larger;
+    border: 1px solid #2A2A2A;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(41, 39, 39);
+    
+}
+#show-opt{
+    /* background-color:slategray; */
+    grid-area: 4/8/5/8;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 50%;
+    background: red;
+}
+#show-opt:hover{
+    cursor: pointer;
+    font-style: italic;
+}
+
+#hide-opt{
+    /* background-color:coral; */
+    grid-area: 4/9/5/9;
+    border: 2px solid black;
+    color: whitesmoke;
+    background: grey;
+    text-align: center;
+    font-size: larger;
+    border-radius: 50%;
+}
+#hide-opt:hover{
+    cursor: pointer;
+    font-style: italic;
+}
+
+
+
+
+/* responsive */
+@media (max-width:900px) {
+    .container{
+        grid-template-rows:repeat(3,60px) ;
+        grid-template-columns: repeat(3,100px);
+        justify-content: center;
+        
+        /* margin :0 0px; */
+        
+    }
+    #text-container{
+        overflow: hidden;
+    }
+    #usertype-container{
+        grid-column: 1/3;
+        
+    }
+    #wpmContainer{
+        grid-row: 2/3;
+        grid-column: 3/4;
+    }
+    #time-container{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    #refresh-container{
+        grid-row: 3/4;
+        grid-column: 2/3;
+        
+        
+    }
+
+
+
+
+    
+}
+
+    @media (max-width:650px) {
+        .container{
+            grid-template-rows:repeat(3,60px) ;
+            grid-template-columns: repeat(3,100px);
+            justify-content: center;
+            margin :0 30px;
+            
+        }
+        #usertype-container{
+            grid-column: 1/4;
+            grid-row: 2/3;
+            
+        }
+        #wpmContainer{
+            grid-row: 3/4;
+            grid-column: 1/2;
+        }
+        #time-container{
+            grid-row: 3/4;
+            grid-column: 2/3;
+        }
+        #refresh-container{
+            grid-row: 3/4;
+            grid-column: 3/4;
+            
+            
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+
+
+
+
+
+
+
+    .hide{
+        display: none;
+        
+    }
+    .hideTime{
+        display: none;
+    }
+    
+    
+    
